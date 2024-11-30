@@ -30,17 +30,14 @@ jobs:
       - name: Run Tests
         run: dotnet test --no-build --configuration Release --verbosity normal
 
+      - name: Create Artifacts Directory
+        run: mkdir -p ./artifacts
+
       - name: Publish Build Artifacts
-        if: always()
         run: dotnet publish --configuration Release -o ./artifacts
 
-  package:
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
+      - name: Verify Artifacts Directory
+        run: ls -la ./artifacts
 
       - name: Upload Build Artifacts
         uses: actions/upload-artifact@v3
