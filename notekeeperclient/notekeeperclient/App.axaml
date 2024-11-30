@@ -2,11 +2,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:themes="clr-namespace:Material.Styles.Themes;assembly=Material.Styles"
              x:Class="notekeeperclient.App"
-             RequestedThemeVariant="Default">
-             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+             RequestedThemeVariant="Default">             
 
     <Application.Styles>
         <FluentTheme />
-         <themes:MaterialTheme BaseTheme="Dark" PrimaryColor="Purple" SecondaryColor="Lime" />
+         <themes:MaterialTheme 
+            BaseTheme="Dark" 
+            PrimaryColor="DeepPurple" 
+            SecondaryColor="Lime" />
     </Application.Styles>        
 </Application>
