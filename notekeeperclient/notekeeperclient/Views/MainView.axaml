@@ -1,18 +1,37 @@
-<UserControl xmlns="https://github.com/avaloniaui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="clr-namespace:notekeeperclient.ViewModels"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="notekeeperclient.Views.MainView"
-             x:DataType="vm:MainViewModel">
+<UserControl 
+  xmlns="https://github.com/avaloniaui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:vm="clr-namespace:notekeeperclient.ViewModels"
+  xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+  mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+  x:Class="notekeeperclient.Views.MainView"
+  x:DataType="vm:MainViewModel">
+
   <Design.DataContext>
     <vm:MainViewModel />
   </Design.DataContext>
 
-  <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-    <TextBlock Text="{Binding Greeting}" />
-    <TextBlock Text="{Binding Counter, StringFormat='Clicked {0} times'}" Margin="0,20,0,0" />
-    <Button Command="{Binding IncrementCommand}" Content="Click me!" />
-  </StackPanel>
+  <DockPanel VerticalAlignment="Top">
+    <controls:ColorZone 
+      Name="PART_AppBarContainer" 
+      VerticalAlignment="Top" 
+      HorizontalAlignment="Stretch"
+      DockPanel.Dock="Top"
+      Height="56" 
+      Mode="PrimaryMid" 
+      ZIndex="1">
+
+      <Grid Margin="16">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="24" />
+          <ColumnDefinition Width="32" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="32" />
+          <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+      </Grid>
+    </controls:ColorZone>
+  </DockPanel>
 </UserControl>
