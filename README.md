@@ -4,3 +4,6 @@ A cross-platform client application for the Notekeeper API (https://github.com/s
 # Uses
 - [AvaloniaSolution](https://github.com/Keboo/DotnetTemplates/tree/main/templates/Avalonia/AvaloniaSolution) from [@Keboo](https://github.com/Keboo)
 - [Material.Avalonia](https://github.com/AvaloniaCommunity/Material.Avalonia) from [@AvaloniaCommunity](https://github.com/AvaloniaCommunity)
+
+# Author 
+Sergej stk
