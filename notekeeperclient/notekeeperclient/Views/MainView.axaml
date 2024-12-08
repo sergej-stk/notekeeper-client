@@ -42,6 +42,11 @@
             Width="24" 
             Height="24" />
         </ToggleButton>
+        <TextBlock 
+          Grid.Column="2" 
+          Classes="Headline6" 
+          Text="Notekeeper Client"
+          VerticalAlignment="Center" />
       </Grid>
     </controls:ColorZone>
   </DockPanel>
