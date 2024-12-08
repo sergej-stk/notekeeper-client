@@ -5,6 +5,7 @@
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
   xmlns:vm="clr-namespace:notekeeperclient.ViewModels"
   xmlns:controls="clr-namespace:Material.Styles.Controls;assembly=Material.Styles"
+  xmlns:avalonia="clr-namespace:Material.Icons.Avalonia;assembly=Material.Icons.Avalonia"
   mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
   x:Class="notekeeperclient.Views.MainView"
   x:DataType="vm:MainViewModel">
@@ -30,7 +31,43 @@
           <ColumnDefinition Width="*" />
           <ColumnDefinition Width="32" />
           <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
+        <ToggleButton
+          Theme="{StaticResource MaterialFlatButton}"
+          Width="32"
+          Height="32"
+          Padding="4">
+          <avalonia:MaterialIcon 
+            Kind="Menu" 
+            Width="24" 
+            Height="24" />
+        </ToggleButton>
+        <TextBlock 
+          Grid.Column="2" 
+          Classes="Headline6" 
+          Text="Notekeeper Client"
+          VerticalAlignment="Center" />
+        <ToggleButton
+          Grid.Column="4" 
+          Theme="{StaticResource MaterialFlatButton}"
+          Width="32"
+          Height="32">
+          <avalonia:MaterialIcon 
+            Kind="ThemeLightDark" 
+            Width="24" 
+            Height="24" />
+        </ToggleButton>
+        <ToggleButton
+          Grid.Column="5" 
+          Theme="{StaticResource MaterialFlatButton}"
+          Width="32"
+          Height="32">
+          <avalonia:MaterialIcon 
+            Kind="Account" 
+            Width="24" 
+            Height="24" />
+        </ToggleButton>
       </Grid>
     </controls:ColorZone>
   </DockPanel>
