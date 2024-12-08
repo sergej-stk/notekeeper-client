@@ -31,6 +31,7 @@
           <ColumnDefinition Width="*" />
           <ColumnDefinition Width="32" />
           <ColumnDefinition Width="Auto" />
+          <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
         <ToggleButton
           Theme="{StaticResource MaterialFlatButton}"
@@ -47,6 +48,26 @@
           Classes="Headline6" 
           Text="Notekeeper Client"
           VerticalAlignment="Center" />
+        <ToggleButton
+          Grid.Column="4" 
+          Theme="{StaticResource MaterialFlatButton}"
+          Width="32"
+          Height="32">
+          <avalonia:MaterialIcon 
+            Kind="ThemeLightDark" 
+            Width="24" 
+            Height="24" />
+        </ToggleButton>
+        <ToggleButton
+          Grid.Column="5" 
+          Theme="{StaticResource MaterialFlatButton}"
+          Width="32"
+          Height="32">
+          <avalonia:MaterialIcon 
+            Kind="Account" 
+            Width="24" 
+            Height="24" />
+        </ToggleButton>
       </Grid>
     </controls:ColorZone>
   </DockPanel>
