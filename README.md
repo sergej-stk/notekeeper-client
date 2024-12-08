@@ -6,4 +6,4 @@ A cross-platform client application for the Notekeeper API (https://github.com/s
 - [Material.Avalonia](https://github.com/AvaloniaCommunity/Material.Avalonia) from [@AvaloniaCommunity](https://github.com/AvaloniaCommunity)
 
 # Author 
-Sergej stk
+- [sergej-stk](https://www.github.com/sergej-stk)
